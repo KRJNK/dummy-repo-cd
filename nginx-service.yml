@@ -6,7 +6,8 @@ spec:
   selector:
     app:  nginx
   type:  LoadBalancer
+  loadBalancerIP: 127.0.0.19
   ports:
   - name:  http
-    port:  8000
+    port:  80
     targetPort:  8080
