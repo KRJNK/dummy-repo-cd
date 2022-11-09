@@ -5,7 +5,7 @@ metadata:
 spec:
   selector:
     app:  nginx
-  type:  LoadBalancer
+  type:  ClusterIP
   loadBalancerIP: 127.0.0.19
   ports:
   - name:  http
