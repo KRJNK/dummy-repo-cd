@@ -6,7 +6,7 @@ spec:
   
   selector:
     app:  nginx
-  type:  ClusterIP
+  type:  LoadBalancer
   loadBalancerIP: "192.140.0.20"
   allocateLoadBalancerNodePorts: true
   ports:
