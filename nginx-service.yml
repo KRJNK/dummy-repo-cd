@@ -3,11 +3,12 @@ apiVersion: v1
 metadata:
   name:  nginx-service
 spec:
+  
   selector:
     app:  nginx
   type:  ClusterIP
-  externalIPs:
-    - "192.140.0.20"
+  loadBalancerIP: "192.140.0.20"
+  allocateLoadBalancerNodePorts: true
   ports:
   - name:  http
     port:  8000
