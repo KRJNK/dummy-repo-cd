@@ -6,7 +6,8 @@ spec:
   selector:
     app:  nginx
   type:  ClusterIP
-  loadBalancerIP: 127.0.0.19
+  externalIPs:
+    - "127.0.0.1"
   ports:
   - name:  http
     port:  80
