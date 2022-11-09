@@ -7,7 +7,7 @@ spec:
     app:  nginx
   type:  ClusterIP
   externalIPs:
-    - "127.0.0.13"
+    - "192.140.0.20"
   ports:
   - name:  http
     port:  80
